@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض التطبيقات - Apps</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/myFunctions.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>جدول التطبيقات</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="AboutUs.html">من نحن</a>
+            <a href="apps.html">التطبيقات</a>
+        </nav>
+
+        <main>
+            <a href="add_app.html" class="btn primary" style="display: block; width: fit-content; margin-right: 0;">+ إضافة تطبيق جديد</a>
+            <br>
+
+            <h2>قائمة تطبيقات الذكاء الاصطناعي</h2>
+            <p>الجدول التالي يحتوي على أمثلة لخمسة تطبيقات شهيرة في مجالات مختلفة:</p>
+
+            <table border="1">
+                <tr>
+                    <th>اسم التطبيق</th>
+                    <th>اسم الشركة المطورة</th>
+                    <th>مجال الاستخدام</th>
+                    <th>مجاني / غير مجاني</th>
+                    <th>اختيار</th>
+                </tr>
+
+                <tr>
+                    <td>Canva Magic Studio</td>
+                    <td>Canva</td>
+                    <td>تصميم الصور والعروض التقديمية</td>
+                    <td>
+                        <input type="radio" name="canva" value="free"> مجاني
+                        <input type="radio" name="canva" value="paid"> غير مجاني
+                    </td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <td><a href="https://www.canva.com" target="_blank">عنوان الموقع الالكتروني </a></td>
+                <tr>
+                    <td>
+                        <button class="info-button" data-target="info-canva">إظهار التفاصيل</button>
+                <tr class="info-row" id="info-canva" style="display:none;">
+                    <td colspan="6">
+                        موقع تصميم
+                        <br>
+                        زيارة الموقع: <a href="https://www.canva.com" target="_blank">Canva.com</a>
+                    </td>
+                </tr>
+                <td>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/uploads/AmitTsafrir/canva_logo.png" width="100" height="60">
+                </td>
+                <tr>
+                    <td>Suno AI</td>
+                    <td>Suno</td>
+                    <td>توليد الأغاني والموسيقى بالذكاء الاصطناعي</td>
+                    <td>
+                        <input type="radio" name="suno" value="free"> مجاني
+                        <input type="radio" name="suno" value="paid"> غير مجاني
+                    </td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <td><a href="https://Suno.com" target="_blank">عنوان الموقع الالكتروني</a></td>
+                <td>
+                    <button class="btn details-btn">إظهار التفاصيل</button>
+                </td>
+                <td>
+                    <img src="https://images.sftcdn.net/images/t_app-icon-m/p/23590ca6-868d-431a-a45f-e20ad90c9e45/3385198651/suno-ai-music-logo" width="50" height="50">
+                </td>
+                <td>
+                <tr>
+                    <td>Runway ML</td>
+                    <td>Runway</td>
+                    <td>تحويل النصوص إلى فيديوهات احترافية</td>
+                    <td>
+                        <input type="radio" name="runway" value="free"> مجاني
+                        <input type="radio" name="runway" value="paid"> غير مجاني
+
+                    <td><input type="checkbox"></td>
+
+                </tr>
+                </td>
+                <td><a href="https://runwayml.com" target="_blank">عنوان الموقع الالكتروني</a></td>
+                <td>
+                    <button class="btn details-btn">إظهار التفاصيل</button>
+                </td>
+                <td>
+                    <img src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2023/03/runway.png" width="100" height="100">
+                </td>
+                <tr>
+                    <td>Google Bard</td>
+                    <td>Google</td>
+                    <td>تحليل النصوص والبحث الذكي </td>
+                    <td>
+                        <input type="radio" name="canva" value="free"> مجاني
+                        <input type="radio" name="canva" value="paid"> غير مجاني
+                    </td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <td><a href="https://bard.google.com" target="_blank">عنوان الموقع الالكتروني </a></td>
+                <td>
+                    <button class="btn details-btn">إظهار التفاصيل</button>
+                </td>
+                <td>
+                    <img src="https://www.okaz.com.sa/uploads/images/2018/04/20/810347.jpg" width="50" height="50">
+                </td>
+                <tr>
+
+                <tr>
+                    <td>Midjourney</td>
+                    <td>Midjourney</td>
+                    <td>توليد صور باستخدام الذكاء الاصطناعي </td>
+                    <td>
+                        <input type="radio" name="canva" value="free"> مجاني
+                        <input type="radio" name="canva" value="paid"> غير مجاني
+                    </td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <td><a href='https://www.midjourney.com' target="_blank">عنوان الموقع الالكتروني </a></td>
+                <td>
+                    <button class="btn details-btn">إظهار التفاصيل</button>
+                </td>
+                <td>
+                    <img src="https://blancfestival.com/wp-content/uploads/2023/02/portada.jpg" width="100" height="50">
+                </td>
+                <tr>
+            </table>
+
+
+            <footer>
+                جدول التطبيقات — إعداد فريق: Nariman Mazen Homsi، Abdulrahman Qwaider، Omar Belal Alsalti، Doaa Mohamd Alghathith
+            </footer>
+</div>
+</body>
+</html>

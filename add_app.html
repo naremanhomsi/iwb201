@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>إضافة تطبيق - Add App</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/myFunctions.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>نموذج إضافة تطبيق جديد</h1>
+    </header>
+    
+    <nav>
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="apps.html">التطبيقات</a>
+    </nav>
+
+    <form id="appForm" class="app-form">
+      <label for="appName">اسم التطبيق (أحرف إنجليزية فقط وبدون فراغات)</label>
+      <input id="appName" name="appName" type="text" placeholder="مثال: MyApp" />
+
+      <label for="company">اسم الشركة المصنعة (أحرف إنجليزية فقط)</label>
+      <input id="company" name="company" type="text" placeholder="مثال: Company Name" />
+
+      <label for="website">الموقع الإلكتروني (URL)</label>
+      <input id="website" name="website" type="url" placeholder="https://www.example.com" />
+
+      <label>نوع التطبيق</label>
+      <div class="radio-row">
+        <label><input type="radio" name="isFree" value="true" checked> مجاني</label>
+        <label><input type="radio" name="isFree" value="false"> مدفوع</label>
+      </div>
+
+      <label for="category">مجال الاستخدام</label>
+      <select id="category" name="category">
+        <option value="">-- اختر المجال --</option>
+        <option value="Robotics">Robotics</option>
+        <option value="Education">Education</option>
+        <option value="E-Commerce">E-Commerce</option>
+        <option value="Productivity">Productivity</option>
+        <option value="Health">Health</option>
+        <option value="Entertainment">Entertainment</option>
+      </select>
+
+      <label for="description">شرح مختصر عن التطبيق</label>
+      <textarea id="description" name="description" rows="4" placeholder="اكتب وصفاً مختصراً (10 أحرف على الأقل)..."></textarea>
+
+      <div class="actions">
+        <button type="submit" class="btn primary">إرسال</button>
+        <button type="button" class="btn neutral" id="resetBtn">إعادة</button>
+      </div>
+    </form>
+    
+    <footer>
+        © 2025 نموذج إضافة تطبيق
+    </footer>
+  </div>
+  
+  </body>
+</html>
